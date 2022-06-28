@@ -50,10 +50,11 @@ body {
 
 
 /*Sketch-pad*/
-.sketch-pad {
+.screen {
   height: 960px;
   width: 960px;
-  border: black solid;
+  border: 7px #cf3e48 inset;
+  border-radius: 25px;
   background-color: #c0bfc2;
 
 }
