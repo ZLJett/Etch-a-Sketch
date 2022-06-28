@@ -7,15 +7,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #ff4220;
 }
 
 /*Header and Footer*/
-
-.header,
-.footer {
-  background-color: #006699;
-}
-
 .header {
   display: flex;
   justify-content: center;
@@ -42,7 +37,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: red solid;
 }
 
 /*Controls*/
@@ -56,5 +50,6 @@ body {
 .sketch-pad {
   height: 960px;
   width: 960px;
-  border: blue solid;
+  border: black solid;
+  background-color: white;
 }
