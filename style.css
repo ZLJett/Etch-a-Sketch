@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
 body {
   font-family: "roboto", sans-serif;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #ff4220;
+  background-color: #ec1220;
 }
 
 /*Header and Footer*/
@@ -18,10 +18,11 @@ body {
 }
 
 .page-title {
-  color: #f9faf8;
-  font-size: 36px;
+  font-family: 'Bonheur Royale', cursive;
+  color:  #94680b;
+  font-size: 54px;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px .5px #AA771C, 1px -2px .5px #FCF6BA;
 }
 
 .footer {
@@ -51,5 +52,5 @@ body {
   height: 960px;
   width: 960px;
   border: black solid;
-  background-color: white;
+  background-color: #d9d8de;
 }
