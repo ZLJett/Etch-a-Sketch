@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
 body {
   font-family: "roboto", sans-serif;
   margin: 0;
@@ -7,7 +8,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #ec1220;
+  background-color: #c0131f;
+
 }
 
 /*Header and Footer*/
@@ -52,5 +54,6 @@ body {
   height: 960px;
   width: 960px;
   border: black solid;
-  background-color: #d9d8de;
+  background-color: #c0bfc2;
+
 }
