@@ -67,6 +67,16 @@ body {
   font-weight: bold;
 }
 
+.control:hover {
+  text-decoration: underline 2.5px;
+  cursor: pointer;
+}
+
+.control:active {
+  position: relative;
+  top: 2px;
+}
+
 /*Sketch-pad*/
 .screen {
   height: 960px;
