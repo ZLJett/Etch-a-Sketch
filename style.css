@@ -53,8 +53,18 @@ body {
 .control {
   background-color: white;
   border-radius: 50%;
+  box-sizing: border-box;
   height: 127px;
   width: 127px;
+  border-style: solid;
+  border-width: 5px;
+  border-top-color: rgb(223, 220, 220);
+  border-left-color: rgb(223, 220, 220);
+  border-bottom-color: rgb(199, 183, 183);
+  border-right-color: rgb(199, 183, 183);
+  text-shadow: 3px 3px 1px rgba(32, 32, 32, 0.2);
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /*Sketch-pad*/
