@@ -15,7 +15,7 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  padding: 36px;
+  padding: 24px;
 }
 
 .page-title {
@@ -24,14 +24,6 @@ body {
   font-size: 54px;
   font-weight: bold;
   text-shadow: 1px 1px .5px #AA771C, 1px -2px .5px #FCF6BA;
-}
-
-.footer {
-  color: #f9faf8;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 36px;
-  text-shadow: 1px 1px 1px #000;
 }
 
 /*Center*/
@@ -44,9 +36,17 @@ body {
 /*Controls*/
 .controls {
   display: flex;
-  padding: 32px;
+  justify-content: space-between;
+  width: 960px;
+  padding: 48px;
 }
 
+.creator-credit {
+  color: #f9faf8;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+}
 
 /*Sketch-pad*/
 .screen {
