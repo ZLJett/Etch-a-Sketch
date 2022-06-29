@@ -11,11 +11,12 @@ body {
   background-color: #c0131f;
 }
 
-/*Header and Footer*/
+/*Header*/
 .header {
   display: flex;
   justify-content: center;
-  padding: 24px;
+  padding-top: 16px;
+  padding-bottom: 14px;
 }
 
 .page-title {
@@ -34,11 +35,12 @@ body {
 }
 
 /*Controls*/
-.controls {
+.game-controls {
   display: flex;
   justify-content: space-between;
   width: 960px;
-  padding: 48px;
+  padding-top: 14px;
+  padding-bottom: 4px;
 }
 
 .creator-credit {
@@ -46,6 +48,13 @@ body {
   font-size: 16px;
   font-weight: bold;
   text-shadow: 1px 1px 1px #000;
+}
+
+.control {
+  background-color: white;
+  border-radius: 50%;
+  height: 127px;
+  width: 127px;
 }
 
 /*Sketch-pad*/
