@@ -78,6 +78,11 @@ body {
   top: 2px;
 }
 
+.dialog-style {
+  padding: 10px;
+  max-width: 300px;
+}
+
 /*Sketch-pad*/
 .screen {
   --size: 4;
