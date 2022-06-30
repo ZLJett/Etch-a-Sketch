@@ -80,9 +80,18 @@ body {
 
 /*Sketch-pad*/
 .screen {
+  --size: 4;
+  display: grid;
+  grid-template-columns: repeat(var(--size), 1fr);
+  grid-template-rows: repeat(var(--size), 1fr);
   height: 960px;
   width: 960px;
   border: 7px #cf3e48 inset;
   border-radius: 25px;
   background-color: #c0bfc2;
+}
+
+.cell {
+  box-sizing: border-box;
+  border: .5px solid black;
 }
