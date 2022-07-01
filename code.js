@@ -2,6 +2,7 @@ const sizeDialog = document.querySelector(".size-dialog");
 const changeSize = document.querySelector(".change-size");
 const enterSize = document.querySelector(".enter-size");
 const screen = document.querySelector(".screen");
+let isDrawing = false;
 
 function removeCells() {
   const cellList = document.querySelectorAll(".cell");
@@ -14,6 +15,9 @@ function addCells(size) {
     const newCell = document.createElement("div");
     newCell.classList.add("cell");
     newCell.addEventListener("mouseover", () => {
+      if (isDrawing === false) {
+        return;
+      }
       newCell.style.background = "black";
     })
     screen.append(newCell);
@@ -35,9 +39,20 @@ function initialSetup(event) {
 
 window.addEventListener("load", initialSetup);
 
+// Can only draw while mouse is held down
+screen.addEventListener("mousedown", () => {
+  isDrawing = true;
+});
+
+// When mouse is let up drawing will stop
+screen.addEventListener("mouseup", () => {
+  isDrawing = false;
+});
+
+
 changeSize.addEventListener("click", () => {
   sizeDialog.showModal();
-})
+});
 
 enterSize.addEventListener("click", populateScreen);
 
