@@ -14,15 +14,23 @@ function addCells(size) {
   for (let i = 0; i < size * size; i++) {
     const newCell = document.createElement("div");
     newCell.classList.add("cell");
+    // Prevent div from being dragged instead of "colored"
+    newCell.addEventListener('dragstart', (event) => {
+      event.preventDefault()
+    });
+    newCell.addEventListener('drop', (event) => {
+      event.preventDefault()
+    });
+    // Color first cell on click then all subsequently moused over cells
     newCell.addEventListener("mousedown", () => {
       newCell.style.background = "black";
-    })
+    });
     newCell.addEventListener("mouseover", () => {
       if (isDrawing === false) {
         return;
       }
       newCell.style.background = "black";
-    })
+    });
     screen.append(newCell);
   }
 }
@@ -51,7 +59,6 @@ screen.addEventListener("mousedown", () => {
 screen.addEventListener("mouseup", () => {
   isDrawing = false;
 });
-
 
 changeSize.addEventListener("click", () => {
   sizeDialog.showModal();
