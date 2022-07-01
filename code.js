@@ -50,13 +50,13 @@ function initialSetup(event) {
 
 window.addEventListener("load", initialSetup);
 
-// Can only draw while mouse is held down
+// Can only draw while mouse is held down and on screen 
 screen.addEventListener("mousedown", () => {
   isDrawing = true;
 });
 
 // When mouse is let up drawing will stop
-screen.addEventListener("mouseup", () => {
+window.addEventListener("mouseup", () => {
   isDrawing = false;
 });
 
