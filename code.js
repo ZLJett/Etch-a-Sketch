@@ -3,9 +3,10 @@ const changeSize = document.querySelector(".change-size");
 const enterSize = document.querySelector(".enter-size");
 const screen = document.querySelector(".screen");
 
-/* function removeCells() {
-
-} */
+function removeCells() {
+  const cellList = document.querySelectorAll(".cell")
+  cellList.forEach(cell => cell.remove())
+}
 
 function addCells(size) {
   screen.style.setProperty("--size", size);
@@ -17,7 +18,7 @@ function addCells(size) {
 }
 
 function populateScreen(event) {
-  /* removeCells() */
+  removeCells()
   const sizeInput = document.getElementById("sizeInput");
   let numCells = sizeInput.value
   addCells(numCells);
