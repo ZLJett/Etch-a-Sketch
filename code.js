@@ -4,29 +4,36 @@ const enterSize = document.querySelector(".enter-size");
 const screen = document.querySelector(".screen");
 
 function removeCells() {
-  const cellList = document.querySelectorAll(".cell")
-  cellList.forEach(cell => cell.remove())
+  const cellList = document.querySelectorAll(".cell");
+  cellList.forEach(cell => cell.remove());
 }
 
 function addCells(size) {
   screen.style.setProperty("--size", size);
   for (let i = 0; i < size * size; i++) {
     const newCell = document.createElement("div");
-    newCell.classList.add("cell")
-    screen.append(newCell)
+    newCell.classList.add("cell");
+    screen.append(newCell);
   }
 }
 
 function populateScreen(event) {
-  removeCells()
+  removeCells();
   const sizeInput = document.getElementById("sizeInput");
-  let numCells = sizeInput.value
+  let numCells = sizeInput.value;
   addCells(numCells);
-  sizeDialog.close()
+  sizeDialog.close();
+}
+
+function initialSetup(event) {
+  let startingCells = 16;
+  addCells(startingCells);
 }
 
 changeSize.addEventListener("click", () => {
   sizeDialog.showModal();
 })
 
-enterSize.addEventListener("click", populateScreen)
+enterSize.addEventListener("click", populateScreen);
+
+window.addEventListener("load", initialSetup);
