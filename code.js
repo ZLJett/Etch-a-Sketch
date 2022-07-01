@@ -13,6 +13,9 @@ function addCells(size) {
   for (let i = 0; i < size * size; i++) {
     const newCell = document.createElement("div");
     newCell.classList.add("cell");
+    newCell.addEventListener("mouseover", () => {
+      newCell.style.background = "black";
+    })
     screen.append(newCell);
   }
 }
@@ -30,10 +33,15 @@ function initialSetup(event) {
   addCells(startingCells);
 }
 
+window.addEventListener("load", initialSetup);
+
 changeSize.addEventListener("click", () => {
   sizeDialog.showModal();
 })
 
 enterSize.addEventListener("click", populateScreen);
 
-window.addEventListener("load", initialSetup);
+
+
+
+
