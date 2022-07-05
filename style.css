@@ -45,10 +45,10 @@ body {
 
 .creator-credit {
   align-self: center;
-  color: #f9faf8;
-  font-size: 16px;
+  color: #c0131f;
+  font-size: 18px;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.603), 1px 1px 1px rgba(0, 0, 0, 0.603);
 }
 
 .control {
@@ -119,5 +119,4 @@ input[type="number"] {
 
 .cell {
   box-sizing: border-box;
-  border: .5px solid black;
 }
